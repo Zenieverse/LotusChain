@@ -125,3 +125,14 @@ MIT License (see LICENSE file)
 
 ## Repository
 https://github.com/lotuschain/lotuschain (placeholder URL)
+
+
+"version": 1,
+"dfx": "0.18.0",
+"canisters": {
+"main": {
+"type": "motoko",
+"main": "src/main.mo"
+}
+}
+}
