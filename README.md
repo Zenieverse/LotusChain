@@ -1,5 +1,37 @@
 # LotusChain
 Vietnam Blockchain Layer 1
+dfx json
+{
+  "version": 1,
+  "dfx": "0.18.0",
+  "canisters": {
+    "main": {
+      "type": "motoko",
+      "main": "src/main.mo",
+      "id": "ryjl3-tyaaa-aaaaa-aaaba-cai", // Placeholder canister ID for local testing
+      "build": "moc src/main.mo -o .dfx/local/canisters/main/main.wasm"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    },
+    "ic": {
+      "providers": ["https://ic0.app"],
+      "type": "persistent"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "var": {
+    "SHARD_COUNT": 4 // Configurable number of shards for sharding support
+  }
+}
 // File: src/blockchain.js
 const crypto = require('crypto');
 
