@@ -1,4 +1,4 @@
-# LotusChain
+# LotusChain: https://poe.com/LotusChainV01
 Vietnam Blockchain Layer 1
 dfx json
 {
